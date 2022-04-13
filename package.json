@@ -7,10 +7,6 @@
     "test": "cross-env NODE_ENV=testing jest --verbose --runInBand --silent",
     "resetdb": "knex migrate:rollback && knex migrate:latest && knex seed:run"
   },
-  "dependencies": {
-    "@vscode/sqlite3": "5.0.7",
-    "knex": "^1.0.3"
-  },
   "devDependencies": {
     "@types/jest": "^27.4.1",
     "cross-env": "^7.0.3",
@@ -22,5 +18,10 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/BloomInstituteOfTechnology/node-api2-project.git"
+  },
+  "dependencies": {
+    "@vscode/sqlite3": "^5.0.8",
+    "express": "^4.17.3",
+    "knex": "^1.0.7"
   }
 }
